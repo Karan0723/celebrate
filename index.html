@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day that Shines as Bright as You, Happy Birthday Sonakshi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/pic (2).jpeg">
+    <!-- CDN For Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="">Always</a>
+            <a href=""> Be Happy </a>
+            <a href="">Keep Smiling</a>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+
+                <img src="image/pic (1).jpeg">
+                <div class="content">
+                    <div class="author">To the One </div>
+                    <div class="topic">Simply Beautiful, Sonakshi</div>
+                    <div class="des">
+                        Wishing you smiles and endless bliss, Happy Birthday Sonakshi.
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/pic (2).jpeg">
+                <div class="content">
+                    <div class="author"> Every Wish, For You</div>
+                    <div class="topic">A New Beginning</div>
+                    <div class="des">
+                        A mind as brilliant as the stars, and a heart that shines even brighter.
+                    </div>
+
+                    <!-- <div class="buttons">
+                        <button>EXPLORE MORE</button>
+                        <button>CELEBRATE TOGETHER</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/pic (4).jpeg">
+                <div class="content">
+                    <div class="author">For You, With Grace</div>
+                    <div class="topic">With Love, Always</div>
+                    <div class="des">
+                        May your life be as happy as your smile is.
+                    </div>
+                    <!-- <div class="buttons">
+                        <button>EXPLORE MORE</button>
+                        <button>CELEBRATE TOGETHER</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- list thumbnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/pic (1).jpeg">
+                <div class="content">
+                    <div class="title">
+                        Radiant Day
+                    </div>
+                    <div class="description">
+                        Pure joy and unstoppable smiles!
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/pic (2).jpeg">
+                <div class="content">
+                    <div class="title">
+                        Timeless Grace
+                    </div>
+                    <div class="description">
+                        May your beauty and spirit never fade!
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="image/pic (4).jpeg">
+                <div class="content">
+                    <div class="title">
+                        Unstoppable Spirit
+                    </div>
+                    <div class="description">
+                        Keep soaring higher, always inspire!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+        <div class="arrows">
+            <button id="prev">
+                <i class="fa-solid fa-arrow-left"></i> </button>
+            <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+
+
+    </div>
+
+    <audio id="bg-music" src="music/happy-birthday-to-you-piano-version-13976.mp3" loop autoplay muted></audio>
+
+    <script>
+        window.addEventListener('load', function () {
+            const audio = document.getElementById('bg-music');
+
+            // First try to autoplay muted (since many browsers block autoplay with sound)
+            audio.play().then(function () {
+                // Once the audio starts playing, unmute it
+                audio.muted = false;
+            }).catch(function (error) {
+                // Log the error if autoplay fails
+                console.log("Autoplay was blocked or failed.");
+            });
+        });
+    </script>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
