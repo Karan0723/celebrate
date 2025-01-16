@@ -4,7 +4,10 @@ body {
   background-color: #000;
   color: #eee;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 13px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -18,10 +21,17 @@ header {
   align-items: center;
   position: relative;
   z-index: 100;
+  top: 20px;
 }
+
+
+/* header nav{
+  position: relative;
+} */
 header a {
   color: #eee;
   margin-right: 40px;
+  font-size: 12px;
 }
 /* carousel */
 .carousel {
@@ -314,13 +324,13 @@ header a {
 @media screen and (max-width: 768px) {
   .carousel .list .item .content {
     position: absolute;
-    top: 45%;
+    /* top: 45%; */
     /* width: fit-content; */
     width: 1140px;
     max-width: 80%;
     left: 50%;
     transform: translateX(-50%);
-    padding-right: 30%;
+    /* padding-right: 30%; */
     box-sizing: border-box;
     color: #fff;
     text-shadow: 0 5px 10px #0004;
@@ -328,8 +338,52 @@ header a {
 
   .carousel .list .item .title,
   .carousel .list .item .topic {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
-    line-height: 1.3em;
+    line-height: 1.1em;
   }
+}
+
+
+
+#clickMusic {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFD700;  /* Initial color Gold */
+  text-decoration: none;
+  animation: colorChange 1.5s infinite, blinkEffect 0.8s linear infinite;  /* Adding color change and blink animation */
+}
+
+@keyframes blinkEffect {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #FFD700;  /* Gold */
+  }
+  25% {
+    color: #FF69B4;  /* Hot Pink */
+  }
+  50% {
+    color: #00FFFF;  /* Cyan */
+  }
+  75% {
+    color: #FF6347;  /* Tomato Red */
+  }
+  100% {
+    color: #FFD700;  /* Gold */
+  }
+}
+
+#clickMusic:hover {
+  cursor: pointer;  /* Makes the text appear interactive */
 }
