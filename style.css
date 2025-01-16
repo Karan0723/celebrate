@@ -324,7 +324,7 @@ header a {
 @media screen and (max-width: 768px) {
   .carousel .list .item .content {
     position: absolute;
-    /* top: 45%; */
+    top: 49%;
     /* width: fit-content; */
     width: 1140px;
     max-width: 80%;
